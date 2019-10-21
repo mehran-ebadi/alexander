@@ -1,0 +1,31 @@
+<div class='card'>
+    <div class='card-header'>
+        {{title}}
+    </div>
+    <div class='card-body'>
+        <div class='row'>
+            <div class='col-md-2'>User Id:</div>
+            <div class='col-md-4'>
+                <input type='text' [(ngModel)]='UserIdFilter' />
+            </div>
+        </div>
+        <div class='row'>
+            <div class='table-responsive'>
+                <table class='table' *ngIf='hobbies && hobbies.length'>
+                    <thead>
+                        <tr>
+                            <th>User Id</th>
+                            <th>Hobby</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let hobby of hobbies'>
+                            <td>{{ hobby.userId }}</td>
+                            <td>{{ hobby.hobby }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
