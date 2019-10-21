@@ -1,0 +1,22 @@
+{
+  "name": "hiqueryapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*Tests.js"
+  },
+  "author": "Mehran",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.5",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.2",
+    "should": "^13.2.3",
+    "sinon": "^7.5.0"
+  }
+}
